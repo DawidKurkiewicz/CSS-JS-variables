@@ -1,14 +1,16 @@
 :root{
     --base: #ffc600;
     --padding: 10px;
-    --blur:10px;
+    --blur:1px;
     --margin: 10px;
+    --border-radius: 10px;
 }
 img{
     padding:var(--padding);
     margin:var(--margin);
     background: var(--base);
-    filter:blur(var(--blur))
+    filter:blur(var(--blur));
+    border-radius:var(--border-radius);
 }
 .h1{
     color: var(--base)
@@ -28,4 +30,8 @@ body {
 
   input {
     width: 100px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
   }
